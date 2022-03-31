@@ -1,16 +1,24 @@
-<h1>{{title}}</h1>
-
-
+<div class="container d-flex flex-column align-items-center bg-dark">
+<div>
+<h1 class="text-white">{{title}}</h1>
+</div>
+<div >
 <form action="">
+<div class="d-flex flex-column aling-items-center text-white">
 Numero 1:<input type="number" [(ngModel)]="numeroUno" name="numeroUno"><br/><br/>
 Numero 2:<input type="number" [(ngModel)]="numeroDos" name="numeroDos"><br/><br/>
-
-<input type="submit" value="sumar" (click)="sumar()">
-<input type="submit" value="restar" (click)="resta()">
-<input type="submit" value="multiplicar" (click)="multiplicar()">
-<input type="submit" value="dividir" (click)="dividir()">
-
+</div>
+<div class="container  ">
+<input type="submit" value="sumar" (click)="sumar()" class="btn btn-primary me-1 ms-1">
+<input type="submit" value="restar" (click)="resta()" class="btn btn-primary me-1 ms-1">
+<input type="submit" value="multiplicar" (click)="multiplicar()" class="btn btn-primary me-1 ms-1">
+<input type="submit" value="dividir" (click)="dividir()" class="btn btn-primary me-1 ms-1">
+</div>
 
 </form>
+</div>
+<div class="text-white">
 <br/>
 Resultado: {{resultado}}
+</div>
+</div>
